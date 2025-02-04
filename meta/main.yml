@@ -1,0 +1,21 @@
+---
+# meta file for role
+
+galaxy_info:
+  author: wakaranai532
+  role_name: molecule_template_role 
+  description: Ansible Molecule Role Template
+  company: company
+  license: MIT
+
+  min_ansible_version: "2.9"
+
+  platforms:
+    - name: ubuntu
+      versions:
+        - all
+
+  galaxy_tags:
+    - example
+
+dependencies: []

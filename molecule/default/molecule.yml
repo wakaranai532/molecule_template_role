@@ -1,0 +1,28 @@
+---
+
+dependency:
+  name: galaxy
+
+driver:
+  name: docker
+
+platforms:
+  - name: instance
+    image: "geerlingguy/docker-ubuntu2204-ansible:latest" 
+    command: "/lib/systemd/systemd"
+    privileged: true 
+    volumes:
+      - "/sys/fs/cgroup:/sys/fs/cgroup:rw"
+    cgroupns_mode: "host"  
+    capabilities:
+      - SYS_ADMIN
+
+provisioner:
+  name: ansible
+  options:
+    vvv: true
+  env:
+    ANSIBLE_ROLES_PATH: ~/.cache/molecule/skeleton-ansible-role/${MOLECULE_SCENARIO_NAME}/roles:${MOLECULE_PROJECT_DIRECTORY}/..:~/.ansible/roles:/usr/share/ansible/roles:/etc/ansible/roles
+
+verifier:
+  name: ansible
