@@ -1,7 +1,2 @@
 ---
 # tasks file for role
-
-- name: Test
-  ansible.builtin.debug:
-    msg: "{{ role_template_msg }}"
-  when: role_template_run | bool

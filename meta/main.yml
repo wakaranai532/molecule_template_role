@@ -2,9 +2,9 @@
 # meta file for role
 
 galaxy_info:
-  author: wakaranai532
-  role_name: molecule_template_role 
-  description: Ansible Molecule Role Template
+  author: wakaranai532 # your name
+  role_name: molecule_template_role # your role name
+  description: Ansible Molecule Role Template # your role descr.
   company: company
   license: MIT
 

@@ -7,4 +7,4 @@
 
     - name: Include role for molecule testing
       ansible.builtin.include_role:
-        name: "molecule_template_role"
+        name: "molecule_template_role" # your role name

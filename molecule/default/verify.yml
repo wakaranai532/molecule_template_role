@@ -5,8 +5,4 @@
   hosts: all
   gather_facts: false
 
-  tasks:
-
-    - name: Test
-      ansible.builtin.debug:
-        msg: "Verify Role"
+  tasks: []

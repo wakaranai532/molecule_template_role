@@ -1,8 +1,2 @@
 ---
 # default file for role
-
-# ######################################
-# User Vars
-# ######################################
-
-molecule_template_role_var: "Hello World"
